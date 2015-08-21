@@ -9,10 +9,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      render json: {
-                response:
-                    {message: @message.message}
-                  }
+      render :show, status: 201
     else
       render json: @message.errors, status: 422
     end
