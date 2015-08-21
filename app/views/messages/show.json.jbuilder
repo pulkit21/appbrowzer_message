@@ -1,4 +1,4 @@
 json.response do
-  json.message @message.body
+  json.message @message.message
 end
 
