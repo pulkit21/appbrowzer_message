@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
       render json: {
-                renspone:
+                response:
                     {message: @message.message}
                   }
     else
