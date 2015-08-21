@@ -1,4 +1,4 @@
 json.response do
-  json.message @message.message
+  json.extract! @message, :message
 end
 
