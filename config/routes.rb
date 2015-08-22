@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   scope(:path => '/api') do
     resources :messages
+    resources :uber
+    get 'uber_request'=> "uber#uber_request"
   end
 
   # Example of regular route:
