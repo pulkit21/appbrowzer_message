@@ -47,3 +47,5 @@ end
 gem 'rails_12factor', group: :production
 gem 'oauth2'
 gem 'rest-client'
+# Redis
+gem 'redis'
