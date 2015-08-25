@@ -8,6 +8,7 @@ class UberController < ApplicationController
       jid: 'android1@roidsoftware.com',
       auth_token: auth_token
     }
+    render json: "successfull", status: 200
     msg = ActiveSupport::JSON.encode(msg)
     $redis.publish "push.new", msg
   end
