@@ -7,7 +7,7 @@ class UberController < ApplicationController
     auth_token = user_auth["access_token"]
     render json: "successfull", status: 200
     msg = {
-      jid: client_jid
+      jid: client_jid,
       auth_token: auth_token
     }
     msg = ActiveSupport::JSON.encode(msg)
