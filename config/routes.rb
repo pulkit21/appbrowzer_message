@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :messages
     resources :uber
     get 'uber_request'=> "uber#uber_request"
-    post 'uber' => "uber#uber"
+    # post 'uber' => "uber#create"
   end
 
   # Example of regular route:
