@@ -15,4 +15,10 @@ class UberController < ApplicationController
     msg = ActiveSupport::JSON.encode(msg)
     $redis.publish "push.new", msg
   end
+
+  def uber
+    logger.info "#{params}"
+    logger.debug "#{params}"
+    render json: "successfull", status: 200
+  end
 end
