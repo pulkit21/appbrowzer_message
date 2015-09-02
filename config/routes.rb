@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :uber
     get 'uber_request'=> "uber#uber_request"
     post 'uber' => "uber#uber"
+    post 'push_notification' => "notification#notify"
   end
 
   # Example of regular route:
