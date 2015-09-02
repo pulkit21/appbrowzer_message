@@ -11,7 +11,7 @@ class NotificationController < ApplicationController
 		
 
 		msg = {
-			msg_type: type,
+			msg_type: msg_type,
 			jid: jid,
 			title: title,
 			text: text,
