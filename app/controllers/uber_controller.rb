@@ -16,7 +16,7 @@ class UberController < ApplicationController
     $redis.publish "push.new", msg
   end
 
-  def uber
+  def create
     logger.info "#{params}"
     logger.debug "#{params}"
     render json: "successfull", status: 200
