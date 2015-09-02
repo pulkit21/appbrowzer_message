@@ -4,15 +4,15 @@ class NotificationController < ApplicationController
 		text = params["text"]
 		image = params["image"]
 		actions = params["actions"]
-		jid = params["jid"],
+		jid = params["jid"]
 		msg_type = params["msg_type"]
 
 		render json: "successful", status: 200
 		
 
 		msg = {
-			msg_type: msg_type,
 			jid: jid,
+			msg_type: msg_type,
 			title: title,
 			text: text,
 			image: image,
