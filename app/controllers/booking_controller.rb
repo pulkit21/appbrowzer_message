@@ -6,6 +6,7 @@ class BookingController < ApplicationController
     @booking_response = BookingProcessing.send_params(request, params)
     user_auth = JSON.parse @booking_response
     access_token = user_auth["access_token"]
+    render json: "successfull", status: 200
     msg = {
       jid: client_jid,
       access_token: access_token,
