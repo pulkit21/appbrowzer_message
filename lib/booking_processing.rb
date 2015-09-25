@@ -1,7 +1,7 @@
 require 'uri'
 require 'net/http'
 
-module RequestProcessing
+module BookingProcessing
 
   def self.send_params(return_uri, params)
     url = URI("https://tablebook.herokuapp.com/oauth/token")
