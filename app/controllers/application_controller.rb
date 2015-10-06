@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_default_response_format
 
   def home
-
+    render json: {message: "welcome home"}, status: 200
   end
 
   #######
