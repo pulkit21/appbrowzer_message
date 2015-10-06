@@ -3,11 +3,12 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'application#home'
   scope(:path => '/api') do
     resources :messages
     resources :uber
     get 'uber_request'=> "uber#uber_request"
+    get 'appbrowzer'=> "uber#appbrowzer"
     post 'uber' => "uber#uber"
     post 'push_notification' => "notification#notify"
 
